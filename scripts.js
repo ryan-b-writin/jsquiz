@@ -10,6 +10,12 @@ button.addEventListener("click",function(event) {
     height: document.getElementById("height").value,
     letter: document.getElementById("tree").value
   };
+
+  if (treeObject.height === ""|| treeObject.height === null ||
+      treeObject.letter === "" || treeObject.letter === null ) {
+    alert("Hey you gotta fill in the inputs")
+  };
+
   var heightInt = parseInt(treeObject.height);
   var numLevels = (heightInt + 1 ) / 2;
   var treeFill = ""
