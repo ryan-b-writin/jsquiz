@@ -11,16 +11,15 @@ button.addEventListener("click",function(event) {
     letter: document.getElementById("tree").value
   };
 
-  if (treeObject.height === ""|| treeObject.height === null ||
-      treeObject.letter === "" || treeObject.letter === null ) {
+  if (!treeObject.height || !treeObject.letter) {
     alert("Hey you gotta fill in the inputs")
   };
 
-  var heightInt = parseInt(treeObject.height);
-  var numLevels = (heightInt + 1 ) / 2;
+  var numLevels = parseInt(treeObject.height);
+  var baseWidth = (numLevels * 2 ) - 1;
   var treeFill = ""
   // loop through to add characters to variable every level
-  for (i=0; i<heightInt; i++) {
+  for (i=0; i<baseWidth; i++) {
     treeFill += treeObject.letter;
     // only log on odds
     if (i % 2 === 0) {
