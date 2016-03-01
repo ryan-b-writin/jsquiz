@@ -5,7 +5,7 @@ This repo contains my work on the front-end javascript quiz.
 >Enter a number and single character into the input fields and click the button.  
 >Open devtools (or other method of accessing the console) to see your tree!
 
-The instructions were as follows:
+####Quiz instructions:
 
 >Create a tree function that should build a pine tree out of a character in the browser console. It accepts a single object as an argument. The object should have two key/value pairs.
 
