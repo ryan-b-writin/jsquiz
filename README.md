@@ -1,4 +1,9 @@
-### Javascript quiz!
+### Javascript quiz!  
+This repo contains my work on the front-end javascript quiz.
+
+### How to run:  
+>Enter a number and single character into the input fields and click the button.  
+>Open devtools (or other method of accessing the console) to see your tree!
 
 The instructions were as follows:
 
